@@ -20,7 +20,7 @@ restart:
 bash:
 	docker exec -it ${container_name} bash
 
-# Creates a local network called fashion-local-docker-network.
+# Creates a local network called ${network_name}.
 # You can check your local networks using `docker network ls`
 network_up:
 	docker network create --driver=bridge ${network_name}
